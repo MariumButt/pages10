@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Notes to Her— Home</title>
+<link rel="stylesheet" href="style.css">
+<nav>
+  <a href="index.html">Home</a>
+  <a href="fashion.html">Fashion</a>
+  <a href="beauty.html">Beauty</a>
+  <a href="wellness.html">Wellness</a>
+  <a href="lifestyle.html">Lifestyle</a>
+  <a href="journal.html">Journal</a>
+</nav>
+<style>
+
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;padding:8rem 2rem 4rem;text-align:center}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 70% at 50% 40%,rgba(42,13,46,0.9) 0%,var(--charcoal) 70%)}
+.hero-tag{display:inline-block;padding:0.4rem 1.2rem;border:1px solid rgba(212,175,55,0.4);color:var(--gold);font-size:0.7rem;letter-spacing:0.25em;text-transform:uppercase;margin-bottom:2rem;animation:fadeUp 1s 0.2s both}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(3.5rem,10vw,8rem);font-weight:600;line-height:1;animation:fadeUp 1s 0.4s both;background:linear-gradient(135deg,var(--text) 0%,var(--gold) 50%,var(--pink) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero-sub{font-family:'Cormorant Garamond',serif;font-size:clamp(1rem,2.5vw,1.4rem);font-style:italic;color:var(--text-dim);max-width:500px;margin:1.5rem auto;animation:fadeUp 1s 0.6s both}
+.hero-desc{font-size:0.9rem;color:var(--text-muted);max-width:400px;margin:0 auto 2.5rem;animation:fadeUp 1s 0.7s both}
+.hero-btns{display:flex;justify-content:center;flex-wrap:wrap;gap:0.8rem;animation:fadeUp 1s 0.9s both}
+.hero-stats{display:flex;justify-content:center;gap:0;margin-top:3.5rem;animation:fadeIn 2s 1.2s both}
+.hstat{text-align:center;padding:0 2.5rem;border-right:1px solid var(--border)}
+.hstat:last-child{border-right:none}
+.hstat-num{font-family:'Playfair Display',serif;font-size:1.6rem;color:var(--gold)}
+.hstat-label{font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--text-muted)}
+.hero-scroll{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:0.5rem;color:var(--text-muted);font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;animation:fadeIn 2s 1.5s both}
+.scroll-line{width:1px;height:40px;background:linear-gradient(var(--gold),transparent);animation:scrollPulse 2s ease-in-out infinite}
+.cats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5px;margin-top:3rem}
+.post-img-fashion{background:linear-gradient(135deg,var(--plum),var(--plum-mid))}
+.post-img-beauty{background:linear-gradient(135deg,rgba(201,122,143,0.3),var(--surface3))}
+.post-img-wellness{background:linear-gradient(135deg,rgba(212,175,55,0.15),var(--surface3))}
+.posts-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:2rem;margin-top:3rem}
+.about-text p{color:var(--text-dim);line-height:1.9;margin-bottom:1.2rem;font-size:0.95rem}
+.quote-callout{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.1rem;color:var(--pink);margin-top:0.5rem}
+@media(max-width:768px){.cats-grid{grid-template-columns:repeat(2,1fr)}.hero-stats{flex-wrap:wrap}.hstat{padding:1rem;border-right:none;border-bottom:1px solid var(--border)}}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="index.html">Notes to Her</a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="fashion.html">Fashion</a></li>
+    <li><a href="beauty.html">Beauty</a></li>
+    <li><a href="wellness.html">Wellness</a></li>
+    <li><a href="lifestyle.html">Lifestyle</a></li>
+    <li><a href="journal.html">Journal</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a class="nav-cta" href="subscribe.html">Subscribe</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="blob blob1"></div>
+  <div class="blob blob2"></div>
+  <div class="blob blob3"></div>
+  <div style="position:relative;z-index:2;width:100%;max-width:900px">
+    <div class="hero-tag">✦ The Luxury Lifestyle Journal</div>
+    <h1><br>Notes to Her</h1>
+    <p class="hero-sub">Where femininity meets ambition,<br>and softness becomes a superpower.</p>
+    <p class="hero-desc">Fashion · Beauty · Wellness · The soft life, elevated.</p>
+    <div class="hero-btns">
+      <a class="btn-primary" href="journal.html"><span>✦ Explore the Journal</span></a>
+      <a class="btn-outline" href="about.html">About Notes to Her→</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hstat"><div class="hstat-num">120K+</div><div class="hstat-label">Readers</div></div>
+      <div class="hstat"><div class="hstat-num">4 Years</div><div class="hstat-label">Publishing</div></div>
+      <div class="hstat"><div class="hstat-num">300+</div><div class="hstat-label">Stories</div></div>
+    </div>
+  </div>
+  <div class="hero-scroll"><div class="scroll-line"></div><span>Scroll</span></div>
+</section>
+
+<!-- CATEGORIES -->
+<section class="surface section-pad">
+  <div class="container">
+    <div style="text-align:center">
+      <span class="section-label reveal">Curated for you</span>
+      <h2 class="section-title reveal d1">The Four Pillars</h2>
+      <p style="color:var(--text-dim);max-width:480px;margin:0 auto;font-size:0.9rem" class="reveal d2">Every dimension of your best self, explored with intention and elegance.</p>
+    </div>
+    <div class="cats-grid">
+      <a href="fashion.html" class="cat-card g-fashion reveal" style="text-decoration:none;color:inherit">
+        <div class="cat-glow"></div><div class="cat-icon">👗</div>
+        <div class="cat-content"><h3>Fashion</h3><p>Style that tells your story</p><div class="cat-arrow">Explore →</div></div>
+      </a>
+      <a href="beauty.html" class="cat-card g-beauty reveal d1" style="text-decoration:none;color:inherit">
+        <div class="cat-glow"></div><div class="cat-icon">✨</div>
+        <div class="cat-content"><h3>Beauty</h3><p>Rituals for your radiance</p><div class="cat-arrow">Explore →</div></div>
+      </a>
+      <a href="wellness.html" class="cat-card g-wellness reveal d2" style="text-decoration:none;color:inherit">
+        <div class="cat-glow"></div><div class="cat-icon">🌸</div>
+        <div class="cat-content"><h3>Wellness</h3><p>Nourish from the inside out</p><div class="cat-arrow">Explore →</div></div>
+      </a>
+      <a href="lifestyle.html" class="cat-card g-lifestyle reveal d3" style="text-decoration:none;color:inherit">
+        <div class="cat-glow"></div><div class="cat-icon">🕊</div>
+        <div class="cat-content"><h3>Lifestyle</h3><p>The art of living beautifully</p><div class="cat-arrow">Explore →</div></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT PREVIEW -->
+<section class="section-pad">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img-wrap reveal">
+        <div class="about-img"><div class="about-placeholder">M</div></div>
+        <div class="about-frame"></div>
+        <div class="about-badge"><div class="about-badge-num">4</div><div class="about-badge-txt">Years of luxury content</div></div>
+      </div>
+      <div class="about-text">
+        <span class="section-label reveal">The Woman Behind It All</span>
+        <h2 class="section-title reveal d1">A Vision of Feminine Power</h2>
+        <div class="section-divider reveal d1"></div>
+        <p class="reveal d2">I'm Maryam — a writer, dreamer, and devoted student of the beautiful life. I believe that femininity is not a limitation; it is a language.</p>
+        <p class="reveal d2">This space was born from a simple belief: that every woman deserves to feel luminous, intentional, and deeply herself.</p>
+        <p class="quote-callout reveal d3">"Softness is not weakness. It is the most refined form of strength."</p>
+        <div class="stat-grid reveal d3">
+          <div class="stat-item"><div class="stat-num">120K</div><div class="stat-label">Monthly readers</div></div>
+          <div class="stat-item"><div class="stat-num">300+</div><div class="stat-label">Published pieces</div></div>
+          <div class="stat-item"><div class="stat-num">40+</div><div class="stat-label">Brand features</div></div>
+          <div class="stat-item"><div class="stat-num">18+</div><div class="stat-label">Countries reached</div></div>
+        </div>
+        <div style="margin-top:2rem" class="reveal d4"><a href="about.html" class="btn-outline">Read My Story →</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED POSTS -->
+<section class="surface section-pad">
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:1rem;margin-bottom:0">
+      <div>
+        <span class="section-label reveal">From the Journal</span>
+        <h2 class="section-title reveal d1">Featured Stories</h2>
+      </div>
+      <a href="journal.html" style="color:var(--gold);font-size:0.75rem;letter-spacing:0.15em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid rgba(212,175,55,0.4)" class="reveal d2">All Articles →</a>
+    </div>
+    <div class="posts-grid">
+      <div class="card reveal">
+        <div class="card-img post-img-fashion"><span class="tag">Fashion</span>👗</div>
+        <div class="card-body">
+          <div class="card-meta">May 2025 · 6 min read</div>
+          <h3 class="card-title">The Art of Quiet Luxury: Dressing for the Woman You're Becoming</h3>
+          <p class="card-excerpt">Why the most powerful outfits speak in whispers, and how to build a wardrobe that feels like an extension of your truest self.</p>
+          <a class="card-link" href="fashion.html">Read Story →</a>
+        </div>
+      </div>
+      <div class="card reveal d1">
+        <div class="card-img post-img-beauty"><span class="tag">Beauty</span>🌹</div>
+        <div class="card-body">
+          <div class="card-meta">Apr 2025 · 5 min read</div>
+          <h3 class="card-title">My Evening Ritual: 7 Steps to Glowing Skin by Morning</h3>
+          <p class="card-excerpt">The slow, sacred routine I've refined over three years — where skincare becomes ceremony and rest becomes repair.</p>
+          <a class="card-link" href="beauty.html">Read Story →</a>
+        </div>
+      </div>
+      <div class="card reveal d2">
+        <div class="card-img post-img-wellness"><span class="tag">Wellness</span>🕯️</div>
+        <div class="card-body">
+          <div class="card-meta">Mar 2025 · 8 min read</div>
+          <h3 class="card-title">Soft Life, Strong Mind: Building Mental Resilience Through Gentleness</h3>
+          <p class="card-excerpt">Redefining productivity — how choosing softness over hustle became the most radical act of self-discipline I've ever practiced.</p>
+          <a class="card-link" href="wellness.html">Read Story →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="section-pad">
+  <div class="container">
+    <div class="newsletter-box reveal">
+      <span class="section-label" style="display:block;margin-bottom:0.5rem">The Inner Circle</span>
+      <h2>Letters from Maryam</h2>
+      <p>Weekly notes on living beautifully — delivered to your inbox every Sunday.</p>
+      <div class="email-form">
+        <input type="email" class="email-input" placeholder="your@email.com">
+        <button class="email-btn">Subscribe ✦</button>
+      </div>
+      <p class="newsletter-note">Join 120,000+ readers. No spam, ever. Unsubscribe anytime.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="surface section-pad">
+  <div class="container">
+    <div style="text-align:center">
+      <span class="section-label reveal">Voices of the Community</span>
+      <h2 class="section-title reveal d1">What Readers Say</h2>
+    </div>
+    <div class="testi-slider">
+      <div class="testi-item active"><div class="testi-quote">"</div><p class="testi-text">Maryam's writing feels like a conversation with the most graceful friend you've ever had. She taught me that elegance is a mindset, not a price tag.</p><div class="testi-name">Aisha Rahman</div><div class="testi-role">Reader from Dubai · 2 years</div></div>
+      <div class="testi-item"><div class="testi-quote">"</div><p class="testi-text">The Sunday letters are the one email I actually look forward to. Every week, Maryam manages to articulate something I've been feeling but couldn't name.</p><div class="testi-name">Sara Khalid</div><div class="testi-role">Reader from London · 3 years</div></div>
+      <div class="testi-item"><div class="testi-quote">"</div><p class="testi-text">I came for the beauty tips and stayed for the philosophy. Maryam has genuinely shaped how I think about femininity and ambition.</p><div class="testi-name">Zara Iqbal</div><div class="testi-role">Reader from Toronto · 18 months</div></div>
+      <div class="testi-dots">
+        <button class="testi-dot active" onclick="goTo(0)"></button>
+        <button class="testi-dot" onclick="goTo(1)"></button>
+        <button class="testi-dot" onclick="goTo(2)"></button>
+      </div>
+      <div class="testi-arrows">
+        <button class="testi-btn" onclick="prevT()">‹</button>
+        <button class="testi-btn" onclick="nextT()">›</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">Notes to Her</div>
+      <p class="footer-tagline">A luxury lifestyle journal for the woman who chooses herself, intentionally and beautifully.</p>
+      <div class="social-links">
+        <a class="social-link" href="#">IG</a><a class="social-link" href="#">TT</a><a class="social-link" href="#">PI</a><a class="social-link" href="#">YT</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Journal</h4>
+      <ul class="footer-links">
+        <li><a href="fashion.html">Fashion</a></li><li><a href="beauty.html">Beauty</a></li><li><a href="wellness.html">Wellness</a></li><li><a href="lifestyle.html">Lifestyle</a></li><li><a href="selfcare.html">Self-Care</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <ul class="footer-links">
+        <li><a href="about.html">About Maryam</a></li><li><a href="work-with-me.html">Work Together</a></li><li><a href="journal.html">Press Kit</a></li><li><a href="subscribe.html">Subscribe</a></li><li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2025 Notes to Her. All rights reserved.</span>
+    <div class="footer-divider"></div>
+    <span class="footer-copy">Crafted with intention ✦</span>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

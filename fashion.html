@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fashion — Notes to Her</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.post-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:2rem;margin-top:3rem}
+.hero-img-fashion{background:linear-gradient(135deg,var(--plum),var(--plum-mid))}
+.hero-img-style{background:linear-gradient(135deg,rgba(92,36,104,0.4),var(--surface3))}
+.hero-img-lux{background:linear-gradient(135deg,rgba(212,175,55,0.2),var(--surface3))}
+.filter-bar{display:flex;gap:0.8rem;flex-wrap:wrap;margin-top:2rem}
+.filter-btn{padding:0.45rem 1.2rem;border:1px solid var(--border);background:transparent;color:var(--text-muted);font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;cursor:pointer;transition:all 0.3s;font-family:'DM Sans',sans-serif}
+.filter-btn:hover,.filter-btn.active{border-color:var(--gold);color:var(--gold)}
+.featured-strip{display:grid;grid-template-columns:1.5fr 1fr;gap:2rem;margin-top:3rem}
+.featured-big .card-img{aspect-ratio:4/3;font-size:4rem}
+.style-tip{background:var(--surface3);border-left:3px solid var(--gold);padding:1.5rem 2rem;margin:3rem 0}
+.style-tip p{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.1rem;color:var(--text-dim)}
+.style-tip span{font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);display:block;margin-top:0.5rem}
+</style>
+</head>
+<body>
+<nav>
+  <a class="nav-logo" href="index.html">Notes to Her</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="fashion.html" class="active">Fashion</a></li>
+    <li><a href="beauty.html">Beauty</a></li>
+    <li><a href="wellness.html">Wellness</a></li>
+    <li><a href="lifestyle.html">Lifestyle</a></li>
+    <li><a href="journal.html">Journal</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a class="nav-cta" href="subscribe.html">Subscribe</a>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="blob blob1"></div><div class="blob blob2"></div>
+  <div style="position:relative;z-index:2">
+    <div class="page-hero-tag">✦ Style & Elegance</div>
+    <h1>Fashion</h1>
+    <p>Dressing as a language. Style as a form of self-love.</p>
+  </div>
+</div>
+
+<section class="section-pad">
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem">
+      <div>
+        <span class="section-label reveal">This Season</span>
+        <h2 class="section-title reveal d1">Featured Stories</h2>
+      </div>
+    </div>
+    <div class="filter-bar reveal d2">
+      <button class="filter-btn active">All</button>
+      <button class="filter-btn">Quiet Luxury</button>
+      <button class="filter-btn">Wardrobe Edits</button>
+      <button class="filter-btn">Style Tips</button>
+      <button class="filter-btn">Shopping</button>
+    </div>
+
+    <div class="featured-strip">
+      <div class="card featured-big reveal">
+        <div class="card-img hero-img-fashion"><span class="tag">Featured</span>👗</div>
+        <div class="card-body">
+          <div class="card-meta">May 2025 · 6 min read</div>
+          <h3 class="card-title" style="font-size:1.5rem">The Art of Quiet Luxury: Dressing for the Woman You're Becoming</h3>
+          <p class="card-excerpt">Why the most powerful outfits speak in whispers, and how to build a wardrobe that feels like an extension of your truest self. A complete guide to investing in pieces that last.</p>
+          <a class="card-link" href="#">Read Story →</a>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:2rem">
+        <div class="card reveal d1">
+          <div class="card-img hero-img-style" style="aspect-ratio:16/7"><span class="tag">Wardrobe</span>🧥</div>
+          <div class="card-body">
+            <div class="card-meta">Apr 2025 · 4 min read</div>
+            <h3 class="card-title">The 10 Pieces Every Woman Should Own</h3>
+            <a class="card-link" href="#">Read Story →</a>
+          </div>
+        </div>
+        <div class="card reveal d2">
+          <div class="card-img hero-img-lux" style="aspect-ratio:16/7"><span class="tag">Style</span>👠</div>
+          <div class="card-body">
+            <div class="card-meta">Mar 2025 · 5 min read</div>
+            <h3 class="card-title">How to Dress Like You Own the Room</h3>
+            <a class="card-link" href="#">Read Story →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="style-tip reveal">
+      <p>"The most stylish thing you can wear is conviction. Know what you love, wear it unapologetically, and never dress for anyone but yourself."</p>
+      <span>— Maryam's Style Mantra</span>
+    </div>
+
+    <div class="post-grid">
+      <div class="card reveal"><div class="card-img hero-img-fashion"><span class="tag">Shopping</span>🛍</div><div class="card-body"><div class="card-meta">Mar 2025 · 7 min read</div><h3 class="card-title">Luxury on a Budget: Where to Shop Like a Woman of Taste</h3><p class="card-excerpt">The secret is not the price tag. It's the edit. Here's where I shop to dress beautifully without compromise.</p><a class="card-link" href="#">Read Story →</a></div></div>
+      <div class="card reveal d1"><div class="card-img hero-img-style"><span class="tag">Colour</span>🎨</div><div class="card-body"><div class="card-meta">Feb 2025 · 5 min read</div><h3 class="card-title">Building Your Colour Palette: Dress Like a Painting</h3><p class="card-excerpt">How to find your personal colour story and build a wardrobe that feels like you, every single day.</p><a class="card-link" href="#">Read Story →</a></div></div>
+      <div class="card reveal d2"><div class="card-img hero-img-lux"><span class="tag">Essentials</span>👜</div><div class="card-body"><div class="card-meta">Jan 2025 · 6 min read</div><h3 class="card-title">The Handbag Edit: Investment Pieces Worth Every Penny</h3><p class="card-excerpt">Not all handbags are created equal. These are the ones that earn their place in your wardrobe forever.</p><a class="card-link" href="#">Read Story →</a></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="surface section-pad">
+  <div class="container" style="text-align:center">
+    <div class="newsletter-box reveal">
+      <span class="section-label" style="display:block;margin-bottom:0.5rem">Fashion Insider</span>
+      <h2>The Weekly Style Edit</h2>
+      <p>Curated fashion finds, trend edits, and Maryam's personal wardrobe notes — every Friday.</p>
+      <div class="email-form"><input type="email" class="email-input" placeholder="your@email.com"><button class="email-btn">Join ✦</button></div>
+      <p class="newsletter-note">No spam. Only style.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div><div class="footer-brand">Notes to Her</div><p class="footer-tagline">A luxury lifestyle journal for the woman who chooses herself, intentionally and beautifully.</p><div class="social-links"><a class="social-link" href="#">IG</a><a class="social-link" href="#">TT</a><a class="social-link" href="#">PI</a><a class="social-link" href="#">YT</a></div></div>
+    <div class="footer-col"><h4>Journal</h4><ul class="footer-links"><li><a href="fashion.html">Fashion</a></li><li><a href="beauty.html">Beauty</a></li><li><a href="wellness.html">Wellness</a></li><li><a href="lifestyle.html">Lifestyle</a></li><li><a href="selfcare.html">Self-Care</a></li></ul></div>
+    <div class="footer-col"><h4>Connect</h4><ul class="footer-links"><li><a href="about.html">About Maryam</a></li><li><a href="work-with-me.html">Work Together</a></li><li><a href="subscribe.html">Subscribe</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><span class="footer-copy">© 2025 Notes to Her. All rights reserved.</span><div class="footer-divider"></div><span class="footer-copy">Crafted with intention ✦</span></div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
